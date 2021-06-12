@@ -1,0 +1,30 @@
+Script started on 2021-06-12 19:10:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="120" LINES="30"]
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    d1a364dc548d   2 weeks ago   133MB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker run -d a1[K[Kd1
+8073fcb8203842a151b1a606473cc5512b8b2266c68252c5acbaa6621f7e254e
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker run -d d1
+9bb60b4bdbe9efffd6a25b6099d3a6e33717cc498f97f47fead97021f7c2db84
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker run -d d1
+bf8acca9e97c768f727df5988f915804ed4e8e1958d8aff068745b4ee07c856e
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker ps [K
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+bf8acca9e97c   d1        "/docker-entrypoint.…"   6 seconds ago   Up 4 seconds   80/tcp    musing_almeida
+9bb60b4bdbe9   d1        "/docker-entrypoint.…"   8 seconds ago   Up 6 seconds   80/tcp    festive_bassi
+8073fcb82038   d1        "/docker-entrypoint.…"   9 seconds ago   Up 8 seconds   80/tcp    nice_blackburn
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker stop bf 9b
+bf
+9b
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker stop bf 9bps[K
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
+8073fcb82038   d1        "/docker-entrypoint.…"   25 seconds ago   Up 24 seconds   80/tcp    nice_blackburn
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ docker ps -a
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+bf8acca9e97c   d1        "/docker-entrypoint.…"   35 seconds ago   Exited (0) 15 seconds ago             musing_almeida
+9bb60b4bdbe9   d1        "/docker-entrypoint.…"   37 seconds ago   Exited (0) 15 seconds ago             festive_bassi
+8073fcb82038   d1        "/docker-entrypoint.…"   38 seconds ago   Up 37 seconds               80/tcp    nice_blackburn
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-1[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-1[00m$ exit
+exit
+
+Script done on 2021-06-12 19:11:49-03:00 [COMMAND_EXIT_CODE="0"]
