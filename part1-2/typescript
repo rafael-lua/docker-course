@@ -1,0 +1,45 @@
+Script started on 2021-06-12 19:21:43-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="120" LINES="30"]
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker ps -as
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES                  SIZE
+280e21d8c6d6   d1        "/docker-entrypoint.…"   31 seconds ago   Exited (0) 17 seconds ago             peaceful_haibt         1.09kB (virtual 133MB)
+22430d8b570c   d1        "/docker-entrypoint.…"   33 seconds ago   Exited (0) 17 seconds ago             practical_lichterman   1.09kB (virtual 133MB)
+8073fcb82038   d1        "/docker-entrypoint.…"   10 minutes ago   Up 10 minutes               80/tcp    nice_blackburn         1.09kB (virtual 133MB)
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker stop 807
+807
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker container prn[Kune
+WARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+280e21d8c6d60f256af0677e6b138d39a648c043105b9d61613c701aa6733b80
+22430d8b570c65f6d0c6910cde3f1ba56cc91d795372eeb95bb5514d76bb2f86
+8073fcb8203842a151b1a606473cc5512b8b2266c68252c5acbaa6621f7e254e
+
+Total reclaimed space: 3.279kB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker container prune[7Pstop 807[2Pps -asexit[Kdocker ps -asstop 807container prune[7Pstop 807[2Pps -asexit[K[K[K[K[Kdocker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    d1a364dc548d   2 weeks ago   133MB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker images[K[K[K[K[K[Kimage prune
+WARNING! This will remove all dangling images.
+Are you sure you want to continue? [y/N] y
+Total reclaimed space: 0B
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker image prunes[K
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    d1a364dc548d   2 weeks ago   133MB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker images[K[K[K[K[K[Krmi d1
+Untagged: nginx:latest
+Untagged: nginx@sha256:6d75c99af15565a301e48297fa2d121e15d80ad526f8369c526324f0f7ccb750
+Deleted: sha256:d1a364dc548d5357f0da3268c888e1971bbdb957ee3f028fe7194f1d61c6fdee
+Deleted: sha256:fcc8faba78fe8a1f75025781c8fa1841079b75b54fce8408d039f73a48b7a81b
+Deleted: sha256:a476b265974ace4c857e3d88b358e848f126297a8249840c72d5f5ea1954a4bf
+Deleted: sha256:56722ee1ee7e73a5c6f96ea2959fa442fb4db9f044399bcd939bb0a6eb7919dc
+Deleted: sha256:c657df997c75f6c1a9c5cc683e8e34c6f29e5b4c1dee60b632d3477fd5fdd644
+Deleted: sha256:e9e1f772d2a8dbbeb6a4a4dcb4f0d07ff1c432bf94fac7a2db2216837bf9ec5b
+Deleted: sha256:02c055ef67f5904019f43a41ea5f099996d8e7633749b6e606c400526b2c4b33
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker rmi d1images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ docker imagesrmi d1images prunes[Kcontainer prune[7Pstop 807[2Pps -as
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-2[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-2[00m$ exit
+exit
+
+Script done on 2021-06-12 19:23:03-03:00 [COMMAND_EXIT_CODE="0"]
