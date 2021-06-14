@@ -1,0 +1,8 @@
+docker ps -as
+docker stop 807
+docker container prune
+y
+docker images
+docker rmi d1
+docker images
+docker ps -as

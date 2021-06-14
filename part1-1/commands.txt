@@ -1,0 +1,7 @@
+docker images
+docker run -d d1
+docker run -d d1
+docker run -d d1
+docker ps
+docker stop bf 9b
+docker ps -a
