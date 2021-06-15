@@ -1,0 +1,57 @@
+Script started on 2021-06-15 10:56:08-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="120" LINES="30"]
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-7[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-7[00m$ docker build . -t <image name>[K[K[K[K[K[K[K[K[K[K[K[Kweb-server
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                                                 
+[?25h[1A[0G[?25l[+] Building 0.1s (2/2)                                                                                                 
+[34m => [internal] load build definition from Dockerfile                                                               0.0s
+[0m[34m => => transferring dockerfile: 101B                                                                               0.0s
+[0m[34m => [internal] load .dockerignore                                                                                  0.0s
+[0m[34m => => transferring context: 2B                                                                                    0.0s
+[0m[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.3s (3/4)                                                                                                 
+[34m => [internal] load build definition from Dockerfile                                                               0.0s
+[0m[34m => => transferring dockerfile: 101B                                                                               0.0s
+[0m[34m => [internal] load .dockerignore                                                                                  0.0s
+[0m[34m => => transferring context: 2B                                                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                                0.0s
+[0m => [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine                                                  0.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (4/5)                                                                                                 
+[34m => [internal] load build definition from Dockerfile                                                               0.0s
+[0m[34m => => transferring dockerfile: 101B                                                                               0.0s
+[0m[34m => [internal] load .dockerignore                                                                                  0.0s
+[0m[34m => => transferring context: 2B                                                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                                0.0s
+[0m[34m => [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine                                                  0.1s
+[0m => exporting to image                                                                                             0.0s
+[34m => => exporting layers                                                                                            0.0s
+[0m[34m => => writing image sha256:978fbf315695ef5a3ec2e77ee411c4dcd9aa9b867fbc7ea3d26962545fda0585                       0.0s
+[0m => => naming to docker.io/library/web-server                                                                      0.0s
+[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.4s (5/5) FINISHED                                                                                        
+[34m => [internal] load build definition from Dockerfile                                                               0.0s
+[0m[34m => => transferring dockerfile: 101B                                                                               0.0s
+[0m[34m => [internal] load .dockerignore                                                                                  0.0s
+[0m[34m => => transferring context: 2B                                                                                    0.0s
+[0m[34m => [internal] load metadata for docker.io/devopsdockeruh/simple-web-service:alpine                                0.0s
+[0m[34m => [1/1] FROM docker.io/devopsdockeruh/simple-web-service:alpine                                                  0.1s
+[0m[34m => exporting to image                                                                                             0.0s
+[0m[34m => => exporting layers                                                                                            0.0s
+[0m[34m => => writing image sha256:978fbf315695ef5a3ec2e77ee411c4dcd9aa9b867fbc7ea3d26962545fda0585                       0.0s
+[0m[34m => => naming to docker.io/library/web-server                                                                      0.0s
+[0m[?25h
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-7[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-7[00m$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+ubuntu                              latest    7e0aa2d69a15   7 weeks ago    72.7MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 months ago   15.7MB
+web-server                          latest    978fbf315695   3 months ago   15.7MB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-7[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-7[00m$ docker run web-server
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^C]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-7[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-7[00m$ exit
+exit
+
+Script done on 2021-06-15 10:59:08-03:00 [COMMAND_EXIT_CODE="2"]
