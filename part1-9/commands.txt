@@ -1,0 +1,19 @@
+docker pull devopsdockeruh/simple-web-service
+docker images
+ls
+touch text
+docker run -v "$(pwd)/text:/usr/src/app/text.log" 99f99
+cat text
+
+-> 2021-06-18 13:30:40 +0000 UTC
+-> 2021-06-18 13:30:42 +0000 UTC
+-> 2021-06-18 13:30:44 +0000 UTC
+
+
+###
+
+I had issues with the text.log file extension on using WSL2, 
+so I was unable to mount it with the .log extension.
+I opened a issue here for context: https://github.com/microsoft/WSL/issues/7084
+
+But it works normally without the extension. 

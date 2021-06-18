@@ -1,0 +1,31 @@
+Script started on 2021-06-18 10:29:18-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="120" LINES="30"]
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ docker pull devopsdockeruh/simple-web-service [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ke
+Using default tag: latest
+latest: Pulling from devopsdockeruh/simple-web-service
+
+[1A[2Kcd2b813b068d: Pulling fs layer [1B
+[1A[2K4f4fb700ef54: Pulling fs layer [1B[1A[2K4f4fb700ef54: Downloading [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Verifying Checksum [1B[1A[2K4f4fb700ef54: Download complete [1B[2A[2Kcd2b813b068d: Downloading [>                                                  ]  52.43kB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [===>                                               ]  408.7kB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [========>                                          ]  855.2kB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [=============>                                     ]  1.429MB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [====================>                              ]  2.132MB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [=============================>                     ]  2.976MB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [=================================>                 ]  3.435MB/5.117MB[2B[2A[2Kcd2b813b068d: Downloading [========================================>          ]  4.148MB/5.117MB[2B[2A[2Kcd2b813b068d: Verifying Checksum [2B[2A[2Kcd2b813b068d: Download complete [2B[2A[2Kcd2b813b068d: Extracting [>                                                  ]  65.54kB/5.117MB[2B[2A[2Kcd2b813b068d: Extracting [===>                                               ]  327.7kB/5.117MB[2B[2A[2Kcd2b813b068d: Extracting [===============>                                   ]  1.573MB/5.117MB[2B[2A[2Kcd2b813b068d: Extracting [===============================>                   ]  3.211MB/5.117MB[2B[2A[2Kcd2b813b068d: Extracting [==================================================>]  5.117MB/5.117MB[2B[2A[2Kcd2b813b068d: Pull complete [2B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Extracting [==================================================>]      32B/32B[1B[1A[2K4f4fb700ef54: Pull complete [1BDigest: sha256:20282b20abae04beefa9637bb565943330ed5d085a22fcf8c4878abad80be712
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:latest
+docker.io/devopsdockeruh/simple-web-service:latest
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ docker images
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+youtube-dl                          latest    9b161e701c4f   25 hours ago   147MB
+ubuntu                              18.04     81bcf752ac3d   4 weeks ago    63.1MB
+devopsdockeruh/simple-web-service   latest    99f995eeaa58   3 months ago   10.1MB
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ ls
+typescript
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ touch text
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ docker run -v "$()p)w)d)[C;[K/text:/u[K/usr/src/app/text.log[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cusr/src/app/text.l[1Pog[A]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C" 99f99
+Starting log output
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+Wrote text to /usr/src/app/text.log
+^C]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ cat text
+2021-06-18 13:30:40 +0000 UTC
+2021-06-18 13:30:42 +0000 UTC
+2021-06-18 13:30:44 +0000 UTC
+]0;rafael-lua@TECINFO-X: ~/code-projects/study-projects/docker-course/part1-9[01;32mrafael-lua@TECINFO-X[00m:[01;34m~/code-projects/study-projects/docker-course/part1-9[00m$ exit
+exit
+
+Script done on 2021-06-18 10:30:57-03:00 [COMMAND_EXIT_CODE="0"]
