@@ -1,0 +1,145 @@
+/* font-family: 'Lato', sans-serif; */
+
+:root {
+
+  --primary-color: #212121;
+  --secondary-color: #424242;
+  --light-color: #EEEEEE;
+
+  --link-color: #FFD54F;
+  --link-color-focused: #FFC107;
+  --link-color-visited: #FFA000;
+  --link-underline: #FFE082;
+  --link-underline-focused: #FFE028;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--light-color);
+  line-height: 1.6;
+  /* background-color: var(--primary-color); */
+  background-color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0; /* Top and bottom margin */
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+code, pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  Utilities                                 */
+/* -------------------------------------------------------------------------- */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.shadow {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.darker-bg {
+  background-color: var(--primary-color);
+}
+
+.dark-bg {
+  background-color: var(--secondary-color);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: 700;
+  border-bottom: 1px solid var(--link-underline);
+}
+
+.link:hover {
+  color: var(--link-color-focused);
+  border-bottom: 1px solid var(--link-underline-focused);
+}
+
+.link:visited {
+  color: var(--link-color-visited);
+  border-bottom: 1px solid var(--link-underline);
+}
+
+.text-shadow {
+  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.section-title {
+  font-weight: 700;
+}
+
+.section-hr {
+  width: 15%;
+  margin-bottom: 1.5em;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 5px;
+  font-weight: 700;
+  padding: 0.55em;
+}
+
+.btn:hover {
+  background-color: var(--link-color-focused);
+  color: var(--primary-color);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                       Breakpoints for responsiveness                       */
+/* -------------------------------------------------------------------------- */
+
+/* Smaller devices breakpoint */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Bigger devices breakpoint */
+@media only screen and (min-width: 769px) {
+  
+}
