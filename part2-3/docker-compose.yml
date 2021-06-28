@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+        front-end-example:
+                build: ./example-frontend
+                container_name: frontend_service
+                ports:
+                        - 5000:5000
+                command: ['serve', '-s', '-l', '5000', 'build']
+
+        back-end-example:
+                build: ./example-backend
+                container_name: backend_service
+                ports:
+                        - 8080:8080
+                command: ['./server']
