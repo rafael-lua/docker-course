@@ -1,0 +1,7 @@
+server
+
+# To not accidentally reveal answers. If you're student copying the application you may remove this.
+# Dockerfile
+# docker-compose.yml
+
+### Removed to execute and push to git the exercise 2.3

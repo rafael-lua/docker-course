@@ -1,0 +1,50 @@
+version: '3.5'
+
+services:
+        front-end-example:
+                build: ./example-frontend
+                container_name: frontend-service
+                ports:
+                        - 5000:5000
+                command: ['serve', '-s', '-l', '5000', 'build']
+                environment:
+                        - REACT_APP_BACKEND_URL=http://localhost:3000
+
+        back-end-example:
+                build: ./example-backend
+                container_name: backend-service
+                ports:
+                        - 3000:3000
+                command: ['./server']
+                environment: 
+                        - PORT=3000
+                        - REQUEST_ORIGIN=http://localhost:5000 
+                        - REDIS_HOST=redis_service
+                        - POSTGRES_HOST=postgres  
+
+        nginx-proxy:
+                image: nginx
+                container_name: nginx_service
+                ports:
+                        - 8080:80
+                volumes:
+                        - ./config/nginx.conf:/etc/nginx/nginx.conf
+
+        redis-example:
+                image: redis
+                container_name: redis_service
+                ports:
+                        - 6379:6379
+        
+        postgres:
+                image: postgres
+                restart: unless-stopped
+                environment:
+                        - POSTGRES_PASSWORD=postgres
+                volumes:
+                        - database:/var/lib/postgresql/data
+
+volumes:
+        database:
+
+
