@@ -1,0 +1,5 @@
+In my case, the only problem was the the request origin on backend causing error 403.
+
+I changed to "REQUEST_ORIGIN=http://localhost:8080" because I imagine now nginx proxy is the one that should be taken in consideration. 
+
+Now all buttons work again! 
