@@ -1,0 +1,5 @@
+I applied docker containers for development on my https://github.com/rafael-lua/teacher-dashboard project.
+
+I had to create two dockerfiles, one for the front-end with vue and other for the subfolder with the json server.
+
+Luckily most of the configuration was simple and straithforward. 
